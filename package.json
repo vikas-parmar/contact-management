@@ -1,5 +1,5 @@
 {
-  "name": "contects",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,8 +11,12 @@
     "@types/node": "^16.18.43",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-query": "^3.39.3",
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
@@ -44,6 +48,8 @@
     ]
   },
   "devDependencies": {
+    "@types/leaflet": "^1.9.3",
+    "@types/react-leaflet": "^3.0.0",
     "tailwindcss": "^3.3.3"
   }
 }
