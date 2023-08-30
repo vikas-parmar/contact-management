@@ -16,20 +16,20 @@ const App = () => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="w-screen bg-aliceblue flex flex-col sm:flex-row h-screen">
+      <div className="w-full h-full min-h-screen bg-aliceblue flex flex-col md:flex-row">
         <Navbar />
-        <div className="flex flex-col basis-4/5 items-center h-full w-full">
-          <h1 className="flex-3 text-6xl font-cursive py-16">
+        <main className="flex basis-4/5 flex-col items-center h-full w-full">
+          <h1 className="text-6xl font-cursive py-16">
             {location.pathname === "/contacts"
               ? "Contacts"
               : location.pathname === "/chartandmaps"
               ? "Charts And Maps"
               : "Contacts"}
           </h1>
-          <div className="flex-1 flex justify-center w-full h-full">
+          <div className="flex justify-center w-full h-full">
             <Outlet />
           </div>
-        </div>
+        </main>
       </div>
     </QueryClientProvider>
   );

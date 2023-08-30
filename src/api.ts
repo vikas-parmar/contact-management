@@ -17,3 +17,11 @@ export const useCountryData = () => {
         return data;
     });
 };
+
+export const useGraphData = () => {
+    return useQuery('graphData', async () => {
+        const response = await fetch(`${API_BASE}/historical/all?lastdays=all`);
+        const data = await response.json();
+        return data;
+    });
+};
