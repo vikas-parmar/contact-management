@@ -58,20 +58,31 @@ const ContactList = () => {
         <div className="" key={contact.id}>
           {editingContactId === contact.id ? (
             <div className="flex flex-col gap-4 p-7 bg-cadetblue">
-              <input
-                type="text"
-                className="px-2"
-                value={editedFname}
-                onChange={(e) => setEditedFname(e.target.value)}
-              />
-              <input
-                type="text"
-                className="px-2"
-                value={editedLname}
-                onChange={(e) => setEditedLname(e.target.value)}
-              />
+              <label htmlFor="fName">
+                First Name:
+                <input
+                  id="fName"
+                  type="text"
+                  className="px-2 ml-2"
+                  placeholder="Enter your first name"
+                  value={editedFname}
+                  onChange={(e) => setEditedFname(e.target.value)}
+                />
+              </label>
+
+              <label htmlFor="lName">
+                Last Name:
+                <input
+                  id="lName"
+                  type="text"
+                  className="px-2 ml-2"
+                  value={editedLname}
+                  placeholder="Enter your last name"
+                  onChange={(e) => setEditedLname(e.target.value)}
+                />
+              </label>
               <button
-                className="bg-black text-white hover:opacity-70"
+                className="bg-black hover:bg-aliceblue hover:text-black w-full text-white"
                 onClick={handleSaveEdit}
               >
                 Save

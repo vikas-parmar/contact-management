@@ -54,6 +54,7 @@ const ContactForm = () => {
             id="fName"
             type="text"
             name="fName"
+            placeholder="Enter your first name!"
             value={formData.fName}
             onChange={handleInputChange}
             className={inputStyle}
@@ -66,6 +67,7 @@ const ContactForm = () => {
             id="lName"
             type="text"
             name="lName"
+            placeholder="Enter your last name!"
             value={formData.lName}
             onChange={handleInputChange}
             className={inputStyle}
