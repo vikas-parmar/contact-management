@@ -19,11 +19,9 @@ import {
   MetaFunction,
 } from "@remix-run/node";
 import { createEmptyContact, getContacts } from "./data";
-import appStylesHref from "./app.css";
+import styles from "./app.css?url";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: appStylesHref },
-];
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 // provides data to the component
 export const loader = async ({ request }: LoaderFunctionArgs) => {
