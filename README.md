@@ -1,38 +1,44 @@
-# Welcome to Remix!
+# Contact Management App
 
-- [Remix Docs](https://remix.run/docs)
+This is a contact management app built using **Remix** and **TypeScript**. The project serves as an experimental exploration of Remix’s data and routing flow, allowing you to efficiently manage contacts.
 
-## Development
+## Features
+- ➕ **Add Contacts**: Easily add new contacts using a structured form.
+- 📋 **List Contacts**: Display a list of all saved contacts with quick access to details.
+- ✏️ **Edit & Delete Contacts**: Update or remove contact information with ease.
+  
+## Getting Started
 
-From your terminal:
+From your terminal, start the app in development mode to watch for file changes:
 
 ```sh
 npm run dev
 ```
 
-This starts your app in development mode, rebuilding assets on file changes.
+### Build and Deployment
 
-## Deployment
-
-First, build your app for production:
+To build the app for production:
 
 ```sh
 npm run build
 ```
 
-Then run the app in production mode:
+Then, run the app in production mode:
 
 ```sh
 npm start
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
+### Deployment
+The app can be deployed to any Node-compatible hosting service. Be sure to deploy the output of `remix build`, including:
 - `build/server`
 - `build/client`
+
+## Technologies Used 🛠️
+- **Remix**: Framework for fast and SEO-friendly applications.
+- **TypeScript**: Adds type safety to the app.
+- **Node.js**: Server-side JavaScript runtime.
+
+## Auther
+- GitHub: [ Vikas Parmar ](https://github.com/vikas-parmar)
+- LinkedIn: [ Vikas Parmar ](https://www.linkedin.com/in/vikas-parmar/)
